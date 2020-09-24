@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&display=swap');
+*{
+	margin: 0;
+	padding:0;
+	outline: 0;
+}
+
+
+html{
+	font-size: 10px;
+	font-family: 'Montserrat',sans-serif;
+	scroll-behavior: smooth;
+} 
+.container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hero{
+	min-height: 110vh;
+	width: 100%;
+	phtadding-top:50px;
+	justify-content: center;
+	display: flex;
+	flex-direction: column-reverse;
+align-items: center;
+background-color: black;
+}
+.hero-info{
+	width: 100%;
+	text-align: center;
+}
+.hero-info-heading{
+	font-size: 5rem;
+	font-weight: 500;
+	color:white;
+}
+.hero-info-subheading{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	color:whitesmoke;
+}
+.hero-info-button{
+	margin-top: 30px;
+	padding: 2rem 5rem;
+	display: inline-block;
+	font-size:1.6rem;
+	text-transform:uppercase;
+	color:white;
+	letter-spacing:.6rem;
+	background-color:rgb(85,85,85,0.534);
+    text-decoration: none;
+}
+.hero-img{
+	    height: auto;
+    margin-top: 2rem;
+
+}
+.hero-img img{
+	height: 300px;
+width: 300px;
+border-radius: 150px;
+margin-top: -20px;
+}
+.about{
+	width: 100%;
+	min-height: 50vh;
+	padding: 10px;
+   flex-direction: column;
+   margin-top: 20px;
+}
+
+.about-info{
+text-align: center;
+
+}
+.about-info-heading{
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: .6rem;
+}
+.about-info-disc{
+	font-size: 34px;
+  margin-top: 10px;
+}
+.about-info-button{
+	display: inline-block;
+margin-top: 20px;
+font-size: 25px;
+text-decoration: none;
+background: #4a4141;
+padding: 1rem 1rem;
+color: whitesmoke;
+
+letter-spacing: .2rem;
+margin-bottom: 20px;
+}
+.about-img-wrapper{
+	margin-top: 30px;
+	height: auto;
+	max-width: 400px;
+	position: relative;
+	display: inline-block;
+}
+.about-img-wrapper img{
+	height: 300px;
+width: 300px;
+border-radius: 150px;
+}
+.service{
+	flex-direction: column;
+	min-height: 60vh;
+	padding-top:4rem ;
+}
+.service-header{
+	width: 100%;
+	text-align: center;
+
+
+}
+.service-header-heading{
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+color:black;
+}
+.service-header-disc{
+	font-size: 2.5rem;
+	line-height: 2rem;
+	margin-top: 20px;
+}
+.service-info{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%
+   
+}
+.service-info .service{
+	width: 100%;
+	min-height: 300px;
+	position: relative;
+transition: .3s ease transform;
+	margin:5px;
+}
+
+.service-card{
+	position: absolute;
+height: 100%;
+width: 100%;
+transform-style: preserve-3d;
+transition: .3s ease transform;
+display: block;
+
+}
+.service-front
+{
+position: absolute;
+
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgb(0,0,0,0.13);
+justify-content: center;
+backface-visibility: hidden;
+
+}
+
+.service-back{
+position: absolute;
+
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgb(0,0,0,0.13);	
+backface-visibility: hidden;
+transform: rotateY(180deg);
+}
+.service-front i{
+	font-size: 4rem;
+	color:black;
+	margin-bottom: 10px: 
+}
+.service-front-heading{
+	font-size: 2.5rem;
+	text-transform: capitalize;
+}
+.service-info .service:hover .service-card{
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+.service-front-heading,.service-back-heading{
+	font-size: 2.5rem;
+	text-transform: capitalize;
+}
+.service-back-dics{
+	font-size: 2.3rem;
+	margin-top: 10px;
+	text-align: center;
+}
+.hire{
+	min-height: 30vh;
+	flex-direction: column;
+   width: 100%;
+   
+   padding-top: 30px;
+
+}
+.hire-heading{
+	color:black;
+	font-size: 2.2rem
+;
+text-align: center;
+}
+.hire-button{
+	padding:2rem ;
+	display: inline-block;
+	background-color: #3e3838;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .2rem;
+    margin-top: 10px;
+    color:whitesmoke;
+    transition: .3s ease background-color;
+}
+.hire-button:hover{
+	background-color: black;
+}
+
+.footer{
+height: auto;
+	width: 100%;
+	color:white;
+	background-color: black;
+	flex-direction: column;
+	text-align: center;
+	
+}
+
+.footer-contact-heading{
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+.footer-contact-info{
+	font-size: 30px;
+ text-align: center;
+ padding-top: 20px;
+}
+.footer-contact-heading{
+font-size: 40px;
+}
+.footer-social-follow-heading{
+	font-size: 30px;
+}
+
+
+.footer-social-icon a{
+	font-size: 50px;
+}
+@media only screen and (min-width: 768px){
+	.hero{
+		height: 100vh;
+		flex-direction:row;
+		justify-content: center;
+		align-items:center;
+		margin-top: -55px 
+	}
+	.hero-info{
+		max-width: 30%;
+		text-align: left;
+	}
+	.about{
+		width: 80%;
+		margin:0 auto;
+		flex-direction: row;
+	}
+.about-info{
+	width: 50%;
+	text-align: left;
+	padding-right: 17rem;
+}
+.service-info{
+	flex-direction: row;
+}
+}
+.contain{
+
+}
+
+.div-contain{
+	height: auto;
+width: 100%;
+background-color: black;
+margin-top: 25px;
+}
+
+
+.tiv{
+
+display: flex;
+flex-direction: row-reverse;
+font-size: 21px;
+background: black;
+}
+.tiv li{
+margin-right: 40px;
+}
+.tiv a{
+	font-family: Arial Black;
+color: whitesmoke;
+text-decoration: none;
+}
+.tiv a:hover{
+	background-color: orange;
+}
